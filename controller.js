@@ -63,7 +63,7 @@ parkingLot.unParkCars = function(obj,cb){
     rl.question(`Enter the carNo \n`,carNo=>{          
         
         let parkingPlace = parkingSpace.indexOf(carNo.toString());
-        if(parkingSpace.indexOf===-1){
+        if(parkingPlace===-1){
             return cb("Invaid carNo");
         }
         parkingSpace[parkingPlace] = "0";
